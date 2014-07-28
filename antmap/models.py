@@ -24,8 +24,7 @@ class Ant(models.Model):
         ID_date = models.DateField(_('ID Date'), default=datetime.date.min, blank=True)
         ID = models.CharField(_('ID'), max_length=128, blank=True)
 	
-	discoverer = models.CharField(_('Discoverer'), max_length=128, blank=True)
-	discovery_year = models.IntegerField(_('Discovery Year'), default=0, blank=True)
+	discoverery = models.CharField(_('Discoverer'), max_length=128, blank=True)
 	species = models.ForeignKey(Species, blank=True)
 	specimen_ID = models.CharField(_('Specimen ID'), max_length=128, blank=True) 
 		
