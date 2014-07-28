@@ -95,7 +95,7 @@ TEMPLATE_DIRS = ( TEMPLATE_PATH,)
 
 #Static
 
-STATIC_PATH = os.path.join(PROEJCT_PATH, 'static')
+STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (STATIC_PATH,)
 

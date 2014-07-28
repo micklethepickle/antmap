@@ -4,12 +4,30 @@ from docx import *
 import sys
 import os
 import re
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ants.settings')
+from populate import populate, add_ant, add_species
 
 document = Document('antdata.docx')
 
 def parse_cell(text):
 
-	main_dict = {}
+	main_dict = {"country":"",
+	             "state":"",
+	             "landmark":"",
+	             "collection":"",
+	             "date":"",
+	             "owner":"",
+	             "description":"",
+	             "GPS_lat":"",
+	             "GPS_long":"",
+	             "ID_date":"",
+	             "discovery":"",
+	             "aID":"",
+	             "specimen":"",
+	             "family":"",
+	             "genus":"",
+	             "species":"",
+	             "specimen_ID":"",}
 	
 
 	#get location and everything in Cell #1	
@@ -71,7 +89,7 @@ def parse_cell(text):
 		print (u"ID: {0}".format(ID).encode('UTF-8'))
 		print (u"Edited on: {0}".format(description_date).encode('UTF-8'))
 		main_dict["description"]=description.encode('UTF-8')	
-		main_dict["ID"]=ID.encode('UTF-8')
+		main_dict["aID"]=ID.encode('UTF-8')
 		main_dict["ID_date"]=description_date.encode('UTF-8')
 
 
@@ -118,7 +136,8 @@ def parse_cell(text):
 			main_dict["specimen_ID"]=text3_split_list[3].encode('UTF-8')
 
 	
-	
+	return main_dict
+
 
 
 tables = document.tables
@@ -128,6 +147,8 @@ for table in tables:
 	x = 0
 	y = 0
 	p = 0
+	cell_counter = 0
+	main_dict={}
 #document.tables[i].cell(x,y).paragraphs[p].text != None
 
 
@@ -149,13 +170,20 @@ for table in tables:
 					#	print (u"paragraph {0}:   {1}".format(p, document.tables[i].cell(x,y).paragraphs[p].text).encode('UTF-8'))
 						p = p+1
 					print text.encode('UTF-8')
-					parse_cell(text)
+					main_dict = dict(main_dict.items() + parse_cell(text).items())
+					cell_counter = cell_counter + 1
+					if cell_counter == 3:
+						populate(main_dict)
+						cell_counter = 0
+						main_dict={}
 					x=x+1
 					print ("----------------y+1------------------")
 					p=0
 				except IndexError:
 					x=0
 					break
+			
+
 		except IndexError:
 			break
 		p=0

@@ -7,7 +7,7 @@ class Species(models.Model):
 	genus = models.CharField(_('Genus'), max_length=200, blank=True)
 	species = models.CharField(_('Species'), max_length=128, blank=True)
 
-	def __unicode__(self):
+	def __unicode__():
 		return self.species
 
 class Ant(models.Model):
@@ -32,6 +32,6 @@ class Ant(models.Model):
 	specimen_ID = models.CharField(_('Specimen ID'), max_length=128, blank=True) 
 		
 	def __unicode__(self):
-		return self.specimen_ID
+		return self.species
 	
 
