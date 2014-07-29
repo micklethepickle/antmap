@@ -138,6 +138,14 @@ def parse_cell(text):
 	
 	return main_dict
 
+def dictfilter(pred, d=None):
+    """dictfilter(d) -- returns a dict with all non-empty values from d
+    dictfilter(pred, d) -- returns a dict with all values from d where pred(v)"""
+    if d is None:
+        return {k: v for k, v in pred.items() if v}
+    else:
+        return {k: v for k, v in d.items() if pred(v)} 
+
 
 
 tables = document.tables
@@ -170,7 +178,15 @@ for table in tables:
 					#	print (u"paragraph {0}:   {1}".format(p, document.tables[i].cell(x,y).paragraphs[p].text).encode('UTF-8'))
 						p = p+1
 					print text.encode('UTF-8')
-					main_dict = dict(main_dict.items() + parse_cell(text).items())
+					filtered_dict2 = {}
+					if cell_counter > 0:
+						for k, v in parse_cell(text).items():
+						    if v:
+        						filtered_dict2[k] = v
+					elif cell_counter ==0:
+						main_dict = parse_cell(text)
+					main_dict.update(filtered_dict2)
+					print main_dict
 					cell_counter = cell_counter + 1
 					if cell_counter == 3:
 						populate(main_dict)
