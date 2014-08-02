@@ -115,7 +115,14 @@ def parse_cell(text):
 		discovery = discovery.group().strip('()')
 		text3_split_list = text.split('\n')
 		genus = text3_split_list[1].split(' ')[0]
-		species = text3_split_list[1].split(' ')[1]	
+		if len(text3_split_list) > 2:
+			species_counter = 1
+			species = ""
+			while species_counter < (len( text3_split_list[1].split(' ') ) - 1):
+				species = species + text3_split_list[1].split(' ')[species_counter]
+				species_counter = species_counter + 1
+		else:
+			species = text3_split_list[1].split(' ')[1]	
 
 
 		print (u"Discovery: {0}".format(discovery).encode('UTF-8'))
