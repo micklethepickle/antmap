@@ -7,9 +7,19 @@ import re
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ants.settings')
 from populate import populate, add_ant, add_species
 
-document = Document('antdata.docx')
 
-def parse_cell(text):
+	document = Document('antdata.docx')
+
+def get_doc(docx):
+	return Document(docx)
+
+def parse_cell(text, input_docx):
+
+#	try: 
+#		document = get_doc(input_docx)
+#	else:
+#		print "Error entering Word document file. Please make sure you typed the name of your Word document exactly as is with case sensitivity. Try again"
+		
 
 	main_dict = {"country":"",
 	             "state":"",
