@@ -9,11 +9,12 @@ def to_decimal(GPS_input):
 	
 	#print GPS_input.encode('UTF-8')
 	
-	GPS_split = GPS_input.split('o')
+	if "o" in GPS_input:
+		GPS_split = GPS_input.split('o')
 
 	
 
-	minutes = float(GPS_split[1].strip('’').decode('UTF-8'))
+	minutes = float(GPS_split[1].strip('’'))
 	decimal = minutes/60
 	invert = False
 	integer = 0
@@ -23,7 +24,7 @@ def to_decimal(GPS_input):
 				integer = int(string)
 		except:	
 			None	
-		if  string == 'S' or string == 'E':
+		if  string == 'S' or string == 'WO':
 			invert = True		
 	if invert:
 		GPS_decimal = -(integer + decimal)
