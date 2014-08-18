@@ -6,6 +6,11 @@
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
+<!-- boostrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{% static 'css/bootstratp-fluid-adj.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
 
 
@@ -30,10 +35,24 @@
 	{% if ant_list %}
 	{% for ant in ant_list %}
 	{% if ant.GPS_lat %}
+	
+	var contentString = '<div id="content"> ' +
+		'<div id="siteNotice">' +
+		'</div>'+
+		'<h1 id="firstHeading" class="firstHeading"> {{ ant.species }}</h1>' + 
+		'<div id="bodyContent">' + 
+		'{{ ant.description }}<br>' +
+		'Specimen ID\: {{ ant.specimen_ID }}' +
+		'</div>';
+	
+	var infowindow = new google.maps.InfoWindow({content: contentString});
+	
 	var marker = new google.maps.Marker({
 		position: new google.maps.LatLng(parseFloat({{ ant.GPS_lat }}), parseFloat({{ ant.GPS_long }})),
 		map: map,
 		title: "{{ ant.species }}"})
+	google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+
 	{% endif %}
 	{% endfor %}
 	{% endif %}
@@ -52,23 +71,15 @@
 	
 	<h1>Ants!</h1>
 	
-	{% render_table ant_list %}
 	
 	{% if ant_list %}
-	{%for ant in ant_list %}
-	
-	{{ ant.country }}<br>
-	{{ ant.specimen_ID }}<br>
-	{{ ant.GPS_lat }}<br>
-	{{ ant.GPS_long }} <br>
-	{{ ant.species }} <br>
-	{{ ant.species.family }} <br>
-	{% endfor %}
 	{% else %}
 	<h2>No ants</h2>
 	{% endif %}
 
 </center>
 {% render_table ant_list %}
+<script src={% static 'js/jquery-2/0/3/min.js' %}></script>
+<script src={% static 'js/boostrap.min.js' %}></script>
 </body>
 </html>
