@@ -1,0 +1,4 @@
+*.docx
+test.py
+ants.db
+*.pyc

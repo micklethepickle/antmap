@@ -8,7 +8,7 @@
 
 <!-- boostrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="{% static 'css/bootstratp-fluid-adj.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap-fluid-adj.css' %}" rel="stylesheet">
 	<link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
 	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -23,7 +23,7 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxcLsh5UEYOPRUW_q3uCwLhcVTcYiXfaY">
     </script>
-    <script src="personalSuit.js" ></script>
+    <script src="{% static "js/personalSuit.js" %}" ></script>
 
 
     <script type="text/javascript">
@@ -36,25 +36,7 @@
 	{% if ant_list %}
 	{% for ant in ant_list %}
 	{% if ant.GPS_lat %}
-	
-	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(parseFloat({{ ant.GPS_lat }}), parseFloat({{ ant.GPS_long }})),
-		map: map,
-		title: "{{ ant.species }}"})
 
-	{% else %}
-	
-	var address = "{{ ant.landmark }}" + ", " + "{{ ant.state }}" + ", " + "{{ ant.country}}";  
-	var lat = geocode( address, "lat");
-	var longi = geocode( address, "long");
-	var marker = new google.maps.Marker({
-		position: new google.mapsLatLng(lat,longi),
-		map: map,
-		title: "{{ ant.species }}"})
-
-	{% endif %}
-	
-	
 	var contentString = '<div id="content"> ' +
                 '<div id="siteNotice">' +
                 '</div>'+
@@ -65,9 +47,38 @@
                 '</div>';
 
 	var infowindow = new google.maps.InfoWindow({content: contentString});
+	
+	var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(parseFloat({{ ant.GPS_lat }}), parseFloat({{ ant.GPS_long }})),
+		map: map,
+		title: "{{ ant.species }}"})
 
-	google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
 
+        google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+
+	{% elif ant.landmark %}
+	
+	var address = "{{ ant.landmark }}" + ", " + "{{ ant.state }}" + ", " + "{{ ant.country}}";  
+	var lat = geocode( address, "lat");
+	var longi = geocode( address, "long");
+	var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(lat,longi),
+		map: map,
+		title: "{{ ant.species }}"})
+	
+	var contentString = '<div id="content"> ' +
+                '<div id="siteNotice">' +
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading"> {{ ant.species }}</h1>' +
+                '<div id="bodyContent">' +
+                '{{ ant.description }}<br>' +
+                'Specimen ID\: {{ ant.specimen_ID }}' +
+                '</div>';
+
+        var infowindow = new google.maps.InfoWindow({content: contentString});
+
+        google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+	{% endif %}
 	{% endfor %}
 	{% endif %}
 	}
@@ -93,7 +104,7 @@
 
 </center>
 {% render_table ant_list %}
-<script src={% static 'js/jquery-2/0/3/min.js' %}></script>
-<script src={% static 'js/boostrap.min.js' %}></script>
+<script src={% static 'js/jquery-2.1.1.js ' %}></script>
+<script src={% static 'js/bootstrap.min.js' %}></script>
 </body>
 </html>
