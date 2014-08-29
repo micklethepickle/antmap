@@ -4,7 +4,9 @@
 
 <html>
 <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<script src="{% static "js/sonic.js" %}" ></script>
 
 <!-- boostrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,98 +15,129 @@
 	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
 
+	<!-- Table -->
+	<link rel="stylesheet" href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css" />
 
-   <link rel="stylesheet" href="{{ STATIC_URL }}django_tables2/themes/paleblue/css/screen.css" />
-    <style type="text/css">
-      html { height: 100% }
-      	body { height: 100%; margin: 0; padding: 0 }
-  	    #map-canvas { height: 100% }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxcLsh5UEYOPRUW_q3uCwLhcVTcYiXfaY">
-    </script>
-    <script src="{% static "js/personalSuit.js" %}" ></script>
-
-
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(46.17, -72.43), zoom: 8     };
-	var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-
-	{% if ant_list %}
-	{% for ant in ant_list %}
-	{% if ant.GPS_lat %}
-
-	var contentString = '<div id="content"> ' +
-                '<div id="siteNotice">' +
-                '</div>'+
-                '<h1 id="firstHeading" class="firstHeading"> {{ ant.species }}</h1>' +
-                '<div id="bodyContent">' +
-                '{{ ant.description }}<br>' +
-                'Specimen ID\: {{ ant.specimen_ID }}' +
-                '</div>';
-
-	var infowindow = new google.maps.InfoWindow({content: contentString});
+	<!-- imports from Google -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxcLsh5UEYOPRUW_q3uCwLhcVTcYiXfaY"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
-	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(parseFloat({{ ant.GPS_lat }}), parseFloat({{ ant.GPS_long }})),
-		map: map,
-		title: "{{ ant.species }}"})
+
+	<!-- My Own Stuff -->
+	<script src="{% static "js/personalSuit.js" %}" ></script>
+	<link href="{% static 'css/personal_touch.css' %}" rel="stylesheet">
+
+<!-- Initialize -->
+
+	<script> function initialize() {
+		var mapOptions = {
+			center: new google.maps.LatLng(46.17, -72.43), zoom: 8     };
+			var map = new google.maps.Map(document.getElementById("map-canvas"),
+				mapOptions);
+
+			function openInfoWindow(infos, map, marker){
+				return function(){infos.open(map,marker)};
+
+			}
+
+			{% if ant_list %}
+			{% for ant in ant_list %}
+			{% if ant.GPS_lat %}
+
+			var contentString = '<div id="content"> ' +
+			'<div id="siteNotice">' +
+			'</div>'+
+			'<h1 id="firstHeading" class="firstHeading"> {{ ant.species }}</h1>' +
+			'<div id="bodyContent">' +
+			'{{ ant.description }}<br>' +
+			'Specimen ID\: {{ ant.specimen_ID }}' +
+			'</div>';
+
+			var infowindow = new google.maps.InfoWindow({content: contentString});
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(parseFloat({{ ant.GPS_lat }}), parseFloat({{ ant.GPS_long }})),
+				map: map,
+				title: "{{ ant.species }}"})
 
 
-        google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+			google.maps.event.addListener(marker, 'click', openInfoWindow(infowindow, map, marker)); 
 
-	{% elif ant.landmark %}
+			{% elif ant.landmark %}
+
+			var address = "{{ ant.landmark }}" + ", " + "{{ ant.state }}" + ", " + "{{ ant.country}}";  
+			var lat = geocode( address, "lat");
+			var longi = geocode( address, "long");
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(lat,longi),
+				map: map,
+				title: "{{ ant.species }}"})
+
+			var contentString{{ ant.species }} = '<div id="content"> ' +
+			'<div id="siteNotice">' +
+			'</div>'+
+			'<h1 id="firstHeading" class="firstHeading"> {{ ant.species }}</h1>' +
+			'<div id="bodyContent">' +
+			'{{ ant.description }}<br>' +
+			'Specimen ID\: {{ ant.specimen_ID }}' +
+			'</div>';
+
+			var infowindow = new google.maps.InfoWindow({content: contentString});
+
+			google.maps.event.addListener(marker, 'click', openInfoWindow(infowindow, map, marker));
+			{% endif %}
+			{% endfor %}
+			{% endif %}
+		}
+		google.maps.event.addDomListener(window, 'load', initialize); 
+	</script>
+<script> 
+	$(window).load(function(){
+		$('#loading').delay(4000).fadeOut("fast");
 	
-	var address = "{{ ant.landmark }}" + ", " + "{{ ant.state }}" + ", " + "{{ ant.country}}";  
-	var lat = geocode( address, "lat");
-	var longi = geocode( address, "long");
-	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(lat,longi),
-		map: map,
-		title: "{{ ant.species }}"})
-	
-	var contentString = '<div id="content"> ' +
-                '<div id="siteNotice">' +
-                '</div>'+
-                '<h1 id="firstHeading" class="firstHeading"> {{ ant.species }}</h1>' +
-                '<div id="bodyContent">' +
-                '{{ ant.description }}<br>' +
-                'Specimen ID\: {{ ant.specimen_ID }}' +
-                '</div>';
+	});
+	</script>
 
-        var infowindow = new google.maps.InfoWindow({content: contentString});
-
-        google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
-	{% endif %}
-	{% endfor %}
-	{% endif %}
-	}
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
-
-  </head>
+</head>
 
 <body>
+<div id="loading"> <img id="loadingIMG" src="{% static "img/loading.gif" %}"></div>	
+<div class="container-fluid">
+<div class="row-fluid">
+	<div class="span5">
+	<div class="hero-unit">
 	<div id="map-canvas"/></div>
-<center>
+	</div>
+	</div>
+	<center><button font-size="3em"> Hide Map </button></center>
+	<div class="span7">
+	<div class="hero-unit">
 	
-	
-	<h1>Ants!</h1>
-	
-	
-	{% if ant_list %}
-	{% else %}
-	<h2>No ants</h2>
-	{% endif %}
+		<center>
 
-</center>
-{% render_table ant_list %}
-<script src={% static 'js/jquery-2.1.1.js ' %}></script>
-<script src={% static 'js/bootstrap.min.js' %}></script>
+
+			<h1>Ants!</h1><br><br><br>
+
+			{% if ant_list %}
+			{% else %}
+			<h2>No ants</h2>
+			{% endif %}
+
+		</center>
+		{% render_table ant_list %}
+	</div>
+	</div>
+	</div>
+	</div>
+	<script>
+	
+
+
+	</script>
+
+
+	<script src={% static 'js/bootstrap.min.js' %}></script>
+
+
 </body>
 </html>

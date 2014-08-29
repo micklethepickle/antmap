@@ -1,0 +1,67 @@
+#map-canvas{
+	position: relative;
+	height: 100% ;
+
+	margin:0;
+
+
+
+}
+
+button {
+	width: 10em;  
+	height: 2em;
+}
+
+.sidebar-nav{
+	height: 100%;
+}
+.span5, .row-fluid, .hero-unit, .container-fluid{
+
+	height: 100% ;
+
+}
+
+
+html{
+	height: 100% ;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+body{ 
+	height: 100%; 
+	margin: 0;
+	padding: 0;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+}
+
+div{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+div.container1{
+
+}
+
+h1{font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+letter-spacing: 100px;
+}
+
+#loading{
+	z-index: 1000;
+	position:fixed;
+	top:0;
+	width:100%;
+	background-color:#fdf2d9;
+	height:100%;
+	text-align:center;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+#loadingIMG{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
