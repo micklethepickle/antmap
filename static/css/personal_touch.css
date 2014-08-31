@@ -3,10 +3,9 @@
 	height: 100% ;
 
 	margin:0;
-
-
-
 }
+
+
 
 button {
 	width: 10em;  
@@ -24,6 +23,7 @@ button {
 
 
 html{
+
 	height: 100% ;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
@@ -37,12 +37,10 @@ body{
 div{
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
-div.container1{
 
-}
 
 h1{font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-letter-spacing: 100px;
+letter-spacing: 20px
 }
 
 #loading{
@@ -65,3 +63,46 @@ letter-spacing: 100px;
 	margin-right: -50%;
 	transform: translate(-50%, -50%)
 }
+
+#grad-gray{
+  background-color: -webkit-linear-gradient(left top, #323232 , #c5c5c5); /* For Safari 5.1 to 6.0 */
+  background-color: -o-linear-gradient(bottom right, #323232, #c5c5c5); /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(bottom right, #323232, #c5c5c5); /* For Firefox 3.6 to 15 */
+  background-color: linear-gradient(to bottom right, #323232 , #c5c5c5); /* Standard syntax */
+}
+
+.clicker {
+	-moz-box-shadow:inset 0px 1px 0px 0px #d197fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #d197fe;
+	box-shadow:inset 0px 1px 0px 0px #d197fe;
+	background-color:#7c16cb;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #9c33ed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:120px;
+	text-decoration:none;
+	text-align:center;
+}.clicker:hover {
+	background-color:white;
+	color: #7c16cb;
+}
+/* This button was generated using CSSButtonGenerator.com */

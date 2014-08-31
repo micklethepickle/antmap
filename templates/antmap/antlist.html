@@ -40,8 +40,8 @@
 
 			}
 
-			{% if ant_list %}
-			{% for ant in ant_list %}
+			{% if ant_list_min %}
+			{% for ant in ant_list_min %}
 			{% if ant.GPS_lat %}
 
 			var contentString = '<div id="content"> ' +
@@ -101,22 +101,13 @@
 </head>
 
 <body>
+
 <div id="loading"> <img id="loadingIMG" src="{% static "img/loading.gif" %}"></div>	
 <div class="container-fluid">
-<div class="row-fluid">
-	<div class="span5">
-	<div class="hero-unit">
-	<div id="map-canvas"/></div>
-	</div>
-	</div>
-	<center><button font-size="3em"> Hide Map </button></center>
-	<div class="span7">
-	<div class="hero-unit">
-	
-		<center>
+<center>
 
 
-			<h1>Ants!</h1><br><br><br>
+			<h1>Abouheif Lab</h1><br><br><br>
 
 			{% if ant_list %}
 			{% else %}
@@ -124,9 +115,19 @@
 			{% endif %}
 
 		</center>
+<div class="row-fluid">
+	<div class="span5"  >
+	<div class="grad-gray hero-unit" style="background-color:#323232;">
+	<div id="map-canvas" /></div>
+	</div>
+	</div>
+	<center><button font-size="3em" class="clicker"> Hide Map </button></center>
+
+	<div class="table">
+	
 		{% render_table ant_list %}
 	</div>
-	</div>
+
 	</div>
 	</div>
 	<script>
@@ -137,7 +138,6 @@
 
 
 	<script src={% static 'js/bootstrap.min.js' %}></script>
-
 
 </body>
 </html>

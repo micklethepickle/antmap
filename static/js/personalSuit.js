@@ -42,9 +42,12 @@ function geocode(address, latOrLong){
 /Some jquery/
 
 		$(document).ready(function(){
-			$("button").click(function(){
-				$("#map-canvas").toggle("fast");
-			}, function(){$(".span5").toggle("fast");
+			$("button").click(
+			function(){$("#map-canvas").toggle("fast");
+			}, 
+			function(){$(".span5").toggle("fast");
+			},
+			function(){$("div").addClass("span7");
 			});
 		});
 

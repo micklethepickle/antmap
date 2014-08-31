@@ -7,13 +7,12 @@ import re
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ants.settings')
 from populate import populate, add_ant, add_species
 
-
-	document = Document('antdata.docx')
+document = Document('antdata.docx')
 
 def get_doc(docx):
 	return Document(docx)
 
-def parse_cell(text, input_docx):
+def parse_cell(text):
 
 #	try: 
 #		document = get_doc(input_docx)
