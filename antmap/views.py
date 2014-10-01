@@ -2,8 +2,11 @@
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from antmap.models import Ant, Species
+from django.http import HttpResponseRedirect
+from antmap.models import Ant, Species, Document
+from antmap.forms import DocumentForm
 from antmap.gps_converter import to_decimal
+
 
 def ant_list(request):
 	
@@ -42,3 +45,22 @@ if __name__ == "__main__":
 	for ant in ant_list:
                 if ant.GPS_lat:
 			print ant.GPS_lat
+
+def upload_doc(request):
+	print "HEEEEEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY"
+	context = RequestContext(request)
+	if request.method == 'POST':
+		print"QWWWWQERQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ"
+		form = DocumentForm(request.POST, request.FILES)
+		print form
+		if form.is_valid():
+			newdoc = Document(docfile = request.FILES['docfile'])
+			print "HEEEYY JUDE DONT BE AFFFFRRRAaaaaaaaaaaaaAAAAAAAAAAIIIIIIIIIIIIIIIIIDDDDDDDDDDDDDDDD"
+			print request.FILES['docfile']
+			newdoc.save()
+			return HttpResponseRedirect('/antmap/antlist/')
+	else:
+		form = DocumentForm()
+
+	return render_to_response('antmap/upload.html',{'form':form},context)
+

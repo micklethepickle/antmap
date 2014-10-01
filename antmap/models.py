@@ -33,5 +33,9 @@ class Ant(models.Model):
 		
 	def __unicode__(self):
 		return self.specimen_ID
+
+
+class Document(models.Model):
+	docfile = models.FileField(upload_to='documents')
 	
 
