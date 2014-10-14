@@ -13,5 +13,7 @@ python 2.7.6
 
 ## References
 [https://developers.google.com/maps/documentation/geocoding/](https://developers.google.com/maps/documentation/geocoding/ "Geocode API")
+
 [https://developers.google.com/maps/documentation/javascript/tutorial](https://developers.google.com/maps/documentation/javascript/tutorial](https://developers.google.com/maps/documentation/javascript/tutorial "Google maps API")
+
 [https://github.com/mikemaccana/python-docx](https://github.com/mikemaccana/python-docx "python-docx")
