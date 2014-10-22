@@ -42,14 +42,18 @@ function geocode(address, latOrLong){
 /Some jquery/
 
 		$(document).ready(function(){
-			$("button").click(
+			$(".clicker").click(
 			function(){$("#map-canvas").toggle("fast");
 			}, 
 			function(){$(".span5").toggle("fast");
 			},
 			function(){$("div").addClass("span7");
 			});
-		});
+			$(".toUpload").click(function(){
+				window.location='/antmap/upload/'+this.id;
+			})
+		}
+		);
 
 
 

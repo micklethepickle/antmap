@@ -7,7 +7,7 @@ import re
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ants.settings')
 from populate import populate, add_ant, add_species
 
-document = Document('antdata.docx')
+#document = Document('antdata.docx')
 
 def get_doc(docx):
 	return Document(docx)
@@ -163,64 +163,68 @@ def dictfilter(pred, d=None):
         return {k: v for k, v in d.items() if pred(v)} 
 
 
+def mainfct(document):
+	path_to_docx = "media/documents/"+document
+	document = Document(path_to_docx)
 
-tables = document.tables
-i = 0
-for table in tables:
+	tables = document.tables
+	i = 0
+	for table in tables:
 
-	x = 0
-	y = 0
-	p = 0
-	cell_counter = 0
-	main_dict={}
-#document.tables[i].cell(x,y).paragraphs[p].text != None
+		x = 0
+		y = 0
+		p = 0
+		cell_counter = 0
+		main_dict={}
+	#document.tables[i].cell(x,y).paragraphs[p].text != None
 
 
 
-	while True:
-		try:
-			test_end = document.tables[i].cell(x,y).paragraphs[p].text
-			p=0	
-			while True:
+		while True:
+			try:
+				test_end = document.tables[i].cell(x,y).paragraphs[p].text
+				p=0	
+				while True:
 
-				try:
-					paragraphs = document.tables[i].cell(x,y).paragraphs
-					
-					text=""
-					for paragraph in paragraphs:
-						text = text +'\n'+ paragraph.text
-						text = text.strip('\n')
-						#print text.encode('UTF-8')
-					#	print (u"paragraph {0}:   {1}".format(p, document.tables[i].cell(x,y).paragraphs[p].text).encode('UTF-8'))
-						p = p+1
-					print text.encode('UTF-8')
-					filtered_dict2 = {}
-					if cell_counter > 0:
-						for k, v in parse_cell(text).items():
-						    if v:
-        						filtered_dict2[k] = v
-					elif cell_counter ==0:
-						main_dict = parse_cell(text)
-					main_dict.update(filtered_dict2)
-					print main_dict
-					cell_counter = cell_counter + 1
-					if cell_counter == 3:
-						populate(main_dict)
-						cell_counter = 0
-						main_dict={}
-					x=x+1
-					print ("----------------y+1------------------")
-					p=0
-				except IndexError:
-					x=0
-					break
-			
+					try:
+						paragraphs = document.tables[i].cell(x,y).paragraphs
+						
+						text=""
+						for paragraph in paragraphs:
+							text = text +'\n'+ paragraph.text
+							text = text.strip('\n')
+							p = p+1
+						print text.encode('UTF-8')
+						filtered_dict2 = {}
+						if cell_counter > 0:
+							for k, v in parse_cell(text).items():
+							    if v:
+	        						filtered_dict2[k] = v
+						elif cell_counter ==0:
+							main_dict = parse_cell(text)
+						main_dict.update(filtered_dict2)
+						print main_dict
+						cell_counter = cell_counter + 1
+						if cell_counter == 3:
+							populate(main_dict)
+							cell_counter = 0
+							main_dict={}
+						x=x+1
+						print ("----------------y+1------------------")
+						p=0
+					except IndexError:
+						x=0
+						break
+				
 
-		except IndexError:
-			break
-		p=0
-		y = y + 1
-		print ("-----------------------x+1----------------------------")
-	i = i + 1
+			except IndexError:
+				break
+			p=0
+			y = y + 1
+			print ("-----------------------x+1----------------------------")
+		i = i + 1
 
-print ("REACHED").encode('UTF-8')
+	print ("REACHED").encode('UTF-8')
+
+if __name__ == '__main__':
+	mainfct(sys.argv[1])

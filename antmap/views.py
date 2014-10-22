@@ -1,12 +1,16 @@
 # encoding=utf8
-
+import os
+import re
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from antmap.models import Ant, Species, Document
 from antmap.forms import DocumentForm
 from antmap.gps_converter import to_decimal
-
+parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.sys.path.insert(0,parentdir) 
+import parse
+from parse import mainfct
 
 def ant_list(request):
 	
@@ -55,12 +59,18 @@ def upload_doc(request):
 		print form
 		if form.is_valid():
 			newdoc = Document(docfile = request.FILES['docfile'])
+			print newdoc
 			print "HEEEYY JUDE DONT BE AFFFFRRRAaaaaaaaaaaaaAAAAAAAAAAIIIIIIIIIIIIIIIIIDDDDDDDDDDDDDDDD"
-			print request.FILES['docfile']
+			name=str(request.FILES['docfile'])
+			name=name.replace(' ', '_')
+			print name
 			newdoc.save()
+			mainfct(name)
 			return HttpResponseRedirect('/antmap/antlist/')
 	else:
 		form = DocumentForm()
 
 	return render_to_response('antmap/upload.html',{'form':form},context)
+
+
 
