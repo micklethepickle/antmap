@@ -40,7 +40,7 @@ def parse_cell(text):
 	
 
 	#get location and everything in Cell #1	
-	location = re.search(r'.*?United-States|.*?Canada', text)
+	location = re.search(r'.*?United-States|.*?Canada|.*?United States', text)
 	if location:
 		adress_data = location.group().split(',')
 		adress_data.reverse()	
@@ -164,7 +164,7 @@ def dictfilter(pred, d=None):
 
 
 def mainfct(document):
-	path_to_docx = "media/documents/"+document
+	path_to_docx = document
 	document = Document(path_to_docx)
 
 	tables = document.tables
