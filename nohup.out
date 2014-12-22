@@ -1,0 +1,1508 @@
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Validating models...
+
+0 errors found
+December 22, 2014 - 08:08:47
+Django version 1.6.1, using settings 'ants.settings'
+Starting development server at http://107.170.115.204:8080/
+Quit the server with CONTROL-C.
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+±   N  46 o 17.523’
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62749)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62751)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62752)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62750)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62759)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62758)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62760)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62761)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62762)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62813)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62820)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62822)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62821)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62825)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62828)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62827)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62826)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62829)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62830)
+----------------------------------------
+HEEEEEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62831)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62832)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 62834)
+----------------------------------------
+--------------Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 131, in finish_response
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 422, in log_request
+    self.requestline, str(code), str(size))
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 158, in log_message
+    sys.stderr.write(msg)
+LookupError: unknown encoding: 
+--------------------------
+Exception happened during processing of request from ('212.40.75.27', 37382)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('210.242.228.240', 36706)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('178.19.158.49', 35210)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('87.60.35.249', 44231)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('173.176.81.124', 46045)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('213.144.244.236', 38787)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 49283)
+----------------------------------------
+HEEEEEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 49581)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 49603)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 49845)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('99.225.224.125', 49417)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('122.106.240.30', 51504)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('94.209.58.26', 50043)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51021)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51448)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51452)
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51447)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51449)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51451)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51450)
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51466)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51467)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('96.21.126.70', 51468)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('71.9.144.62', 50970)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('178.192.188.115', 43422)
+----------------------------------------
+----------------------------------------
+ExcepTraceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 124, in handle
+    handler.run(self.server.get_app())
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 92, in run
+    self.close()
+  File "/usr/lib/python2.7/wsgiref/simple_server.py", line 33, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
